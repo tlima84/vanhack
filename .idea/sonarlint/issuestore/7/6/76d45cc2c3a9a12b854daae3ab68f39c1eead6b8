@@ -1,0 +1,12 @@
+
+_squid:S1192"JDefine a constant instead of duplicating this literal "user-slug" 6 times.(ñÃ–Ç
+^squid:S1192"IDefine a constant instead of duplicating this literal "userSlug" 5 times.(÷Þõä
+asquid:S00112"FDefine and throw a dedicated exception instead of using a generic one.(øÛ¼îüÿÿÿÿ
+[squid:S1075"ARefactor your code to get this URI from a customizable parameter.(™ä—Ñûÿÿÿÿ
+Jsquid:S2696"6Make the enclosing method "static" or remove this set.(ÎÈ’#
+asquid:S00112"FDefine and throw a dedicated exception instead of using a generic one.(Ù¬Íÿùÿÿÿÿ
+asquid:S00112"FDefine and throw a dedicated exception instead of using a generic one.(žÆ²¶ÿÿÿÿÿ
+\squid:S00112"FDefine and throw a dedicated exception instead of using a generic one.(Äí¤š
+[squid:S00112"FDefine and throw a dedicated exception instead of using a generic one.(þ¾ëT
+csquid:S1192"IDefine a constant instead of duplicating this literal "old-slug" 6 times.(î•µ…øÿÿÿÿ
+_squid:S1192"JDefine a constant instead of duplicating this literal "/old-slug" 3 times.(÷Þõä
