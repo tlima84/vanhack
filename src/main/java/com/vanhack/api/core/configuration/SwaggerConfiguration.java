@@ -13,8 +13,7 @@ public class SwaggerConfiguration {
     public Docket demoApi(){
         return new Docket(DocumentationType.SWAGGER_2)
                 .apiInfo(new ApiInfoBuilder()
-                        .title("Demo Api Test")
-                        .description("Squeleton API")
+                        .title("VanHack Api")
                         .build())
                 .select()
                 .build();

@@ -40,6 +40,12 @@ public class UserServiceImpl implements UserService{
     }
 
     @Override
+    public User getUser(String slug) {
+
+        return userRepository.findByName(slug).orElseThrow(() -> new EntityNotFoundException(String.format("User not found for slug='%s'", slug)));
+    }
+
+    @Override
     public UserResponse createUser(UserRequest userRequest) {
 
         slugValidation(userRequest.getSlug(), userRequest.getName());
