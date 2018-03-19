@@ -11,18 +11,13 @@ import com.vanhack.api.resources.order.request.OrderRequest;
 import com.vanhack.api.resources.order.response.OrderResponse;
 import com.vanhack.api.resources.products.request.ProductRequest;
 import com.vanhack.api.resources.products.response.ProductResponse;
-import com.vanhack.api.resources.user.request.UserRequest;
-import com.vanhack.api.resources.user.response.UserResponse;
 
-import java.math.BigDecimal;
 import java.util.UUID;
 
 public class VanHackTemplateLoader implements TemplateLoader {
 
-    public static final String USER_CREATE_REQUEST = "user-create-request";
-    public static final String USER_CREATE_RESPONSE = "user-create-response";
-    public static final String USER = "user-entity-no-id";
-    public static final String USER_WITH_ID = "user-entity";
+    private static final String USER = "user-entity-no-id";
+    private static final String USER_WITH_ID = "user-entity";
     public static final String PRODUCT_TO_BE_LISTED = "product-to-be-listed";
     public static final String PRODUCT_ENTITY = "product-entity";
     public static final String ORDER_REQUEST = "order-request";
@@ -33,16 +28,6 @@ public class VanHackTemplateLoader implements TemplateLoader {
 
     @Override
     public void load() {
-
-        Fixture.of(UserRequest.class).addTemplate(USER_CREATE_REQUEST, new Rule() {{
-            add("slug", "user-slug");
-            add("name", "user-name");
-        }});
-
-        Fixture.of(UserResponse.class).addTemplate(USER_CREATE_RESPONSE, new Rule() {{
-            add("slug", "user-slug");
-            add("name", "user-name");
-        }});
 
         Fixture.of(User.class).addTemplate(USER, new Rule() {{
             add("slug", "user-slug");

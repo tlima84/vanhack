@@ -3,7 +3,6 @@ package com.vanhack.api.resources.order;
 import com.vanhack.api.core.service.order.OrderService;
 import com.vanhack.api.resources.order.request.OrderRequest;
 import com.vanhack.api.resources.order.response.OrderResponse;
-import com.vanhack.api.resources.user.response.UserResponse;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiResponse;
@@ -28,7 +27,7 @@ public class OrderController {
     @ApiOperation(value = "Create an order",
             consumes = MediaType.APPLICATION_JSON_UTF8_VALUE, produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
     @ApiResponses(value = {
-            @ApiResponse(code = 201, message = "Successful order creation", response = UserResponse.class),
+            @ApiResponse(code = 201, message = "Successful order creation", response = OrderResponse.class),
             @ApiResponse(code = 412, message = "Invalid data")})
     @RequestMapping(method = RequestMethod.POST, consumes = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity createOrder(@RequestBody OrderRequest orderRequest, UriComponentsBuilder builder){
@@ -45,7 +44,7 @@ public class OrderController {
             consumes = MediaType.APPLICATION_JSON_UTF8_VALUE,
             produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
     @ApiResponses(value = {
-            @ApiResponse(code = 200, message = "Order canceled with success", response = UserResponse.class),
+            @ApiResponse(code = 200, message = "Order canceled with success", response = OrderResponse.class),
             @ApiResponse(code = 404, message = "Invalid order reference")})
     @RequestMapping(method = RequestMethod.PATCH, value = "{orderId}")
     public ResponseEntity cancelOrder(@PathVariable("orderId")String orderId){
@@ -59,7 +58,7 @@ public class OrderController {
             consumes = MediaType.APPLICATION_JSON_UTF8_VALUE,
             produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
     @ApiResponses(value = {
-            @ApiResponse(code = 200, message = "Order returned with success", response = UserResponse.class),
+            @ApiResponse(code = 200, message = "Order returned with success", response = OrderResponse.class),
             @ApiResponse(code = 404, message = "Invalid order reference")})
     @RequestMapping(method = RequestMethod.GET, value = "{orderId}")
     public ResponseEntity getOrder(@PathVariable("orderId")String orderId){

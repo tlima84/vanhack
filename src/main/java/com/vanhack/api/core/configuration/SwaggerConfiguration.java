@@ -14,6 +14,7 @@ public class SwaggerConfiguration {
         return new Docket(DocumentationType.SWAGGER_2)
                 .apiInfo(new ApiInfoBuilder()
                         .title("VanHack Api")
+                        .description("dev: www.linkedin.com/in/thiago-lima-04473b16 <-(I'm not that formal =x)")
                         .build())
                 .select()
                 .build();
