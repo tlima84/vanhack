@@ -1,14 +1,0 @@
-
-nsquid:S1171"YMove the contents of this initializer to a standard constructor or to field initializers.(‰”ùÓ
-ssquid:S1171"YMove the contents of this initializer to a standard constructor or to field initializers.(Öíôòıÿÿÿÿ
-_squid:S1192"JDefine a constant instead of duplicating this literal "user-slug" 5 times.(Ç¸í‘
-Asquid:S3599",Use another way to initialize this instance.(£¼£Õ
-Hsquid:S3599",Use another way to initialize this instance.(¤©‘8¤¨âÊ£,
-nsquid:S1171"YMove the contents of this initializer to a standard constructor or to field initializers.(£¼£Õ
-Asquid:S3599",Use another way to initialize this instance.(‡Æ
-nsquid:S1171"YMove the contents of this initializer to a standard constructor or to field initializers.(‡Æ
-dsquid:S1192"JDefine a constant instead of duplicating this literal "user-name" 5 times.(Äşìöÿÿÿÿÿ
-usquid:S1171"YMove the contents of this initializer to a standard constructor or to field initializers.(¤©‘8¤¨âÊ£,
-Fsquid:S3599",Use another way to initialize this instance.(Öíôòıÿÿÿÿ
-Asquid:S3599",Use another way to initialize this instance.(‰”ùÓ
-ssquid:UselessImportCheck"JRemove this unused import 'com.example.api.core.repository.model.Product'.(‡–‡8Ş—ëÊ£,
